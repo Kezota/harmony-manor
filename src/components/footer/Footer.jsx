@@ -23,7 +23,13 @@ const Footer = () => {
           <div className="socials flex">
             <ImFacebook className="icon" />
             <BsTwitter className="icon" />
-            <AiFillInstagram className="icon" />
+            <AiFillInstagram
+              className="icon"
+              onClick={() => {
+                window.location.href =
+                  "https://www.instagram.com/harmonymanor_/";
+              }}
+            />
           </div>
         </div>
 
