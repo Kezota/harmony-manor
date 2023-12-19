@@ -1,0 +1,171 @@
+.about {
+  height: 90vh;
+}
+.about .navbar-section .nav-link {
+  font-weight: 600;
+}
+.about .navbar-section .header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(238, 238, 238);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+}
+@media screen and (max-width: 768px) {
+  .about .navbar-section .header .navbar {
+    background: rgb(238, 238, 238);
+    position: absolute;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1rem;
+    width: 100%;
+    top: -800%;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+    transition: 0.5s ease;
+    z-index: 1000;
+  }
+  .about .navbar-section .header .navbar .nav-lists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .about .navbar-section .header .navbar .nav-lists .nav-item {
+    padding: 1rem 0;
+  }
+  .about .navbar-section .header .navbar .nav-lists .nav-item .nav-link {
+    color: rgb(54, 54, 54);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .about .navbar-section .header .navbar .nav-lists .nav-item .nav-link:hover {
+    color: rgb(33, 53, 85);
+  }
+  .about .navbar-section .header .navbar .nav-lists .header-btns {
+    flex-direction: column;
+    font-weight: 500;
+  }
+  .about .navbar-section .header .navbar .nav-lists .header-btns .btn {
+    margin-top: 1rem;
+  }
+  .about .navbar-section .header .navbar .nav-lists .header-btns .btn a:hover {
+    color: var(rgb(248, 248, 248));
+  }
+  .about .navbar-section .header .navbar .close-navbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: rgb(79, 112, 156);
+  }
+  .about .navbar-section .header .navbar .close-navbar:hover .icon {
+    color: rgb(33, 53, 85);
+  }
+  .about .navbar-section .header .active-navbar {
+    top: 0;
+  }
+}
+.about .navbar-section .header .toggle-navbar .icon {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: rgb(79, 112, 156);
+}
+.about .navbar-section .header .toggle-navbar .icon:hover {
+  color: rgb(33, 53, 85);
+}
+.about .navbar-section .active-header {
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
+}
+.about .about-section {
+  background-color: white !important;
+}
+.about .about-section .heading {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../../images/about2.avif") center center/cover no-repeat;
+  height: 20rem;
+  z-index: -1;
+}
+.about .about-section .heading .sec-title {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 18%;
+  z-index: 1;
+  color: white;
+}
+.about .about-section .heading .sec-title h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 0.3rem;
+}
+.about .about-section .heading .sec-title p {
+  font-size: 16px;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+}
+.about .about-section .section .first-p {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar-section .toggle-navbar,
+  .navbar-section .close-navbar {
+    display: none;
+  }
+  .navbar-section .header {
+    padding: 1.5rem 2rem;
+  }
+  .navbar-section .header .navbar .nav-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .navbar-section .header .navbar .nav-lists .nav-item .nav-link {
+    color: rgb(180, 180, 180);
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar-section .header .navbar .nav-lists .nav-item .nav-link:hover {
+    color: rgb(79, 112, 156);
+  }
+  .navbar-section .header .navbar .nav-lists .btn {
+    margin-left: 1rem;
+    padding: 10px 30px;
+    font-size: 13px;
+  }
+  .navbar-section .header .navbar .nav-lists .btn a {
+    color: rgb(248, 248, 248);
+    font-weight: 500;
+  }
+  .about .heading h1 {
+    font-size: 3.8rem !important;
+  }
+  .about .heading p {
+    font-size: 20px !important;
+  }
+  .about .fields {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  .about .fields .input-field {
+    width: calc(33.3333333333% - 15px) !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header .navbar .nav-list .nav-item {
+    padding: 0 0.7rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 1rem 8.5rem !important;
+  }
+}/*# sourceMappingURL=about.css.map */

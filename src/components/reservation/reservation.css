@@ -1,0 +1,269 @@
+.reservation .navbar-section .nav-link {
+  font-weight: 600;
+}
+.reservation .navbar-section .header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(238, 238, 238);
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000;
+}
+@media screen and (max-width: 768px) {
+  .reservation .navbar-section .header .navbar {
+    background: rgb(238, 238, 238);
+    position: absolute;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1rem;
+    width: 100%;
+    top: -800%;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+    transition: 0.5s ease;
+    z-index: 1000;
+  }
+  .reservation .navbar-section .header .navbar .nav-lists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .reservation .navbar-section .header .navbar .nav-lists .nav-item {
+    padding: 1rem 0;
+  }
+  .reservation .navbar-section .header .navbar .nav-lists .nav-item .nav-link {
+    color: rgb(54, 54, 54);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .reservation .navbar-section .header .navbar .nav-lists .nav-item .nav-link:hover {
+    color: rgb(33, 53, 85);
+  }
+  .reservation .navbar-section .header .navbar .nav-lists .header-btns {
+    flex-direction: column;
+    font-weight: 500;
+  }
+  .reservation .navbar-section .header .navbar .nav-lists .header-btns .btn {
+    margin-top: 1rem;
+  }
+  .reservation .navbar-section .header .navbar .nav-lists .header-btns .btn a:hover {
+    color: var(rgb(248, 248, 248));
+  }
+  .reservation .navbar-section .header .navbar .close-navbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: rgb(79, 112, 156);
+  }
+  .reservation .navbar-section .header .navbar .close-navbar:hover .icon {
+    color: rgb(33, 53, 85);
+  }
+  .reservation .navbar-section .header .active-navbar {
+    top: 0;
+  }
+}
+.reservation .navbar-section .header .toggle-navbar .icon {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: rgb(79, 112, 156);
+}
+.reservation .navbar-section .header .toggle-navbar .icon:hover {
+  color: rgb(33, 53, 85);
+}
+.reservation .navbar-section .active-header {
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
+}
+.reservation .reservation-section .heading {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../../images/reservation.avif") center center/cover no-repeat;
+  height: 20rem;
+  z-index: -1;
+}
+.reservation .reservation-section .heading .sec-title {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 18%;
+  z-index: 1;
+  color: white;
+}
+.reservation .reservation-section .heading .sec-title h1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 0.3rem;
+}
+.reservation .reservation-section .heading .sec-title p {
+  font-size: 16px;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+}
+.reservation .reservation-section .container {
+  position: relative;
+  max-width: 1000px;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 15px;
+}
+.reservation .reservation-section .container form {
+  position: relative;
+  margin-top: 16px;
+  min-height: 490px;
+}
+.reservation .reservation-section .container form .details {
+  margin-top: 30px;
+}
+.reservation .reservation-section .container form .title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 6px 0;
+  color: #333;
+}
+.reservation .reservation-section .container form .fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.reservation .reservation-section .container form .fields .input-field {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.reservation .reservation-section .container form .fields .input-field .custom-select {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.reservation .reservation-section .container form .fields .input-field select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  font-size: 14px;
+  padding: 0.675em 6em 0.675em 1em;
+  margin: 8px 0;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+.reservation .reservation-section .container form .fields .input-field .custom-select::before,
+.reservation .reservation-section .container form .fields .input-field .custom-select::after {
+  --size: 0.3rem;
+  content: "";
+  position: absolute;
+  right: 1rem;
+  pointer-events: none;
+}
+.reservation .reservation-section .container form .fields .input-field .custom-select::before {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: var(--size) solid black;
+  top: 50%;
+}
+.reservation .reservation-section .container form .fields .input-field .custom-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 65%;
+}
+.reservation .reservation-section .container form .fields .input-field label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+.reservation .reservation-section .container form .fields .input-field input {
+  height: 42px;
+  margin: 8px 0;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+}
+.reservation .reservation-section .container form .fields .input-field input:is(:focus, :valid) {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.reservation .reservation-section .container form .reserve-now {
+  margin-top: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.reservation .reservation-section .container form .reserve-now .btn {
+  font-size: 16px;
+  padding: 13px 30px;
+}
+.reservation .reservation-section .container form .reserve-now .btn:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (min-width: 769px) {
+  .navbar-section .toggle-navbar,
+  .navbar-section .close-navbar {
+    display: none;
+  }
+  .navbar-section .header {
+    padding: 1.5rem 2rem;
+  }
+  .navbar-section .header .navbar .nav-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .navbar-section .header .navbar .nav-lists .nav-item .nav-link {
+    color: rgb(180, 180, 180);
+    padding: 0 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .navbar-section .header .navbar .nav-lists .nav-item .nav-link:hover {
+    color: rgb(79, 112, 156);
+  }
+  .navbar-section .header .navbar .nav-lists .btn {
+    margin-left: 1rem;
+    padding: 10px 30px;
+    font-size: 13px;
+  }
+  .navbar-section .header .navbar .nav-lists .btn a {
+    color: rgb(248, 248, 248);
+    font-weight: 500;
+  }
+  .reservation .heading h1 {
+    font-size: 3.8rem !important;
+  }
+  .reservation .heading p {
+    font-size: 20px !important;
+  }
+  .reservation .fields {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  .reservation .fields .input-field {
+    width: calc(33.3333333333% - 15px) !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header .navbar .nav-list .nav-item {
+    padding: 0 0.7rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 1rem 8.5rem !important;
+  }
+}/*# sourceMappingURL=reservation.css.map */

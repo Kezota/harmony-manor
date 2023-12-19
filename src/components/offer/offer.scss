@@ -1,0 +1,142 @@
+$KashmirBlue: rgba(79, 112, 156, 1);
+$CloudBurst: rgba(33, 53, 85, 1);
+$SafronMango: rgba(255, 194, 111, 1);
+$WhiteLilac: rgba(248, 248, 248, 1);
+$LightGray: rgba(238, 238, 238, 1);
+$DarkGray: rgba(54, 54, 54, 1);
+$SmokeyGray: rgba(180, 180, 180, 1);
+// box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
+
+.offer {
+  padding-bottom: 8rem;
+  .sec-container {
+    .main-content {
+      gap: 1rem;
+
+      .single-offer {
+        border-radius: 1rem;
+        overflow: hidden;
+        padding: 0.5rem;
+        box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
+        margin: 0 1rem 1rem 1rem;
+
+        .icon {
+          font-size: 20px;
+          color: $DarkGray;
+        }
+        small {
+          font-weight: 500;
+          color: $DarkGray;
+        }
+
+        .dest-image {
+          position: relative;
+          height: 200px;
+          width: 100%;
+          border-radius: 1rem;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+          }
+
+          .rooms-left {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background-color: $KashmirBlue;
+            color: $WhiteLilac;
+            border-radius: 3rem;
+            font-size: 13px;
+            font-weight: 500;
+          }
+        }
+
+        .offer-body {
+          .room-type {
+            justify-content: space-between;
+
+            h4 {
+              color: $CloudBurst;
+              font-weight: 700;
+              font-size: 24px;
+            }
+
+            .status {
+              padding: 5px 10px;
+              color: $CloudBurst;
+              background: $LightGray;
+              font-size: 10px;
+              font-weight: 600;
+              border-radius: 3rem;
+            }
+          }
+
+          .price {
+            margin: 1rem 2rem;
+            justify-content: center;
+            color: $CloudBurst;
+            font-weight: 600;
+            font-size: 22px;
+            background-color: $WhiteLilac;
+            padding: 8px 12px;
+            border-radius: 15px;
+          }
+
+          .amenities {
+            width: 100%;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 1rem 0;
+            gap: 0.5rem;
+            font-size: 20px;
+
+            .single-amenity {
+              padding: 5px 10px;
+              gap: 0.5rem;
+              border-bottom: 1px solid $LightGray;
+
+              &:last-child {
+                border: none;
+              }
+            }
+          }
+
+          .room-type {
+            margin-top: 1rem;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            padding: 0.6rem;
+            color: $WhiteLilac;
+            font-weight: 600;
+            gap: 0.5rem;
+
+            .icon {
+              color: $WhiteLilac;
+            }
+          }
+        }
+      }
+    }
+    .see-more {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+
+      .btn {
+        font-size: 18px;
+        padding: 14px 50px;
+        display: flex;
+        gap: 0.2rem;
+
+        &:hover {
+          transition: 0.2s ease;
+          box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}

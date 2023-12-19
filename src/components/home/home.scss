@@ -1,0 +1,269 @@
+$KashmirBlue: rgba(79, 112, 156, 1);
+$CloudBurst: rgba(33, 53, 85, 1);
+$SafronMango: rgba(255, 194, 111, 1);
+$WhiteLilac: rgba(248, 248, 248, 1);
+$LightGray: rgba(238, 238, 238, 1);
+$DarkGray: rgba(54, 54, 54, 1);
+$SmokeyGray: rgba(115, 115, 115, 1);
+
+.home {
+  height: 600px;
+  background: linear-gradient(
+      to right,
+      rgba(79, 112, 156, 1),
+      rgba(79, 112, 156, 0.9),
+      rgba(79, 112, 156, 0.7),
+      rgba(79, 112, 156, 0.6),
+      rgba(79, 112, 156, 0.4),
+      rgba(79, 112, 156, 0)
+    ),
+    url("../../images/heroo.avif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  margin: 0 1rem;
+  border-radius: 40px;
+  top: 80px;
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
+
+  .sec-container {
+    .home-text {
+      text-align: center;
+      margin-bottom: 30px;
+
+      .title {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 1px rgba(178, 178, 178, 0.334);
+      }
+
+      .sub-title {
+        color: white;
+        opacity: 0.9;
+        font-size: 15px;
+        font-weight: 300;
+        padding: 1rem 0;
+        max-width: 70%;
+        text-align: center;
+        margin: auto;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 1px rgba(178, 178, 178, 0.334);
+      }
+    }
+
+    .home-card {
+      width: 80%;
+      border-radius: 1rem;
+      padding: 2rem;
+      background: $WhiteLilac;
+      position: absolute;
+      gap: 1rem;
+      justify-content: center;
+      bottom: -20%;
+      transform: translate(-50%);
+      left: 50%;
+      box-shadow: 0 2px 8px 4px rgba(178, 178, 178, 0.2);
+
+      .benefits {
+        display: flex;
+        flex-direction: row;
+
+        .benefit {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          cursor: default;
+
+          .icon {
+            justify-content: center;
+            border: 1px solid #c1c1c1;
+            font-size: 60px;
+            border-radius: 14px;
+            padding: 10px;
+            margin: 0 5px;
+            cursor: default;
+          }
+
+          p {
+            font-size: 13px;
+          }
+
+          .breakfast {
+            color: #f7bb61;
+          }
+          .wifi {
+            color: #dd4732;
+          }
+          .ac {
+            color: #537be2;
+          }
+          .minibar {
+            color: #52cb7b;
+          }
+
+          p {
+            padding-top: 10px;
+            text-align: center;
+          }
+        }
+      }
+
+      .check-in-out {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+
+        .check-in,
+        .check-out {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+
+          h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: $CloudBurst;
+          }
+
+          p {
+            color: $SmokeyGray;
+          }
+        }
+
+        .check-in {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERIES
+@media screen and (min-width: 480px) {
+  .home {
+    margin: 0 2rem;
+    .sec-container {
+      .home-card {
+        bottom: -15%;
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 556px) {
+  .home {
+    margin: 0 3rem;
+    .sec-container {
+      .home-text {
+        .title {
+          font-size: 2.5rem;
+        }
+        .sub-title {
+          font-size: 18px;
+        }
+      }
+
+      .home-card {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .home {
+    .sec-container {
+      .home-card {
+        background: $WhiteLilac;
+        bottom: -15%;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem 2rem;
+
+        .benefits {
+          .benefit {
+            .icon {
+              font-size: 70px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+
+        .check-in-out {
+          letter-spacing: 1px;
+          display: flex;
+          margin-bottom: 20px;
+          .check-in {
+            padding-left: 40px;
+          }
+
+          h3 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .home {
+    margin: 0 3rem;
+    .sec-container {
+      .home-text {
+        padding: 1rem 10rem;
+
+        .title {
+          margin: auto;
+          font-size: 46px;
+          line-height: 4rem;
+        }
+
+        .sub-title {
+          width: 70%;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home {
+    margin: 0 4rem;
+    .sec-container {
+      .home-text {
+        .title {
+          font-size: 56px;
+          line-height: 5rem;
+          text-shadow: 1px 1px 1px rgba(178, 178, 178, 0.334);
+        }
+        .sub-title {
+          font-size: 20px;
+          text-shadow: 1px 1px 1px rgba(178, 178, 178, 0.334);
+        }
+      }
+
+      .home-card {
+        width: 70%;
+        bottom: -13%;
+      }
+    }
+  }
+}
