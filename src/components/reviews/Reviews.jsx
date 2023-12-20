@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./reviews.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
 import Footer from "../footer/Footer";
-import Review from "../review/Review";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import img1 from "../../images/person1.jpg";
 import img2 from "../../images/person2.jpg";
@@ -25,6 +26,15 @@ const Reviews = () => {
   const removeNav = () => {
     setActive("navbar");
   };
+
+  // scroll to top on page load
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
   return (
     <div className="reviews">
@@ -107,8 +117,10 @@ const Reviews = () => {
       <section className="reviews-section">
         <div className="heading">
           <div className="sec-title">
-            <h1 className="title">Reviews Page</h1>
-            <p>
+            <h1 className="title" data-aos="fade-down" data-aos-duration="2000">
+              Reviews Page
+            </h1>
+            <p data-aos="fade-down">
               Dive into the buzz with reviews that capture the real scoop on
               your stay
             </p>
@@ -117,7 +129,11 @@ const Reviews = () => {
         <div className="review container section">
           <div className="sec-container">
             <div className="main-content testimonial-box-container">
-              <div className="testimonial-box">
+              <div
+                className="testimonial-box"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <div className="box-top">
                   <div className="profile">
                     <div className="profile-img">
@@ -145,7 +161,12 @@ const Reviews = () => {
                   </p>
                 </div>
               </div>
-              <div className="testimonial-box">
+
+              <div
+                className="testimonial-box"
+                data-aos="fade-up"
+                data-aos-duration="2000"
+              >
                 <div className="box-top">
                   <div className="profile">
                     <div className="profile-img">
@@ -173,7 +194,12 @@ const Reviews = () => {
                   </p>
                 </div>
               </div>
-              <div className="testimonial-box">
+
+              <div
+                className="testimonial-box"
+                data-aos="fade-up"
+                data-aos-duration="2500"
+              >
                 <div className="box-top">
                   <div className="profile">
                     <div className="profile-img">
@@ -201,7 +227,12 @@ const Reviews = () => {
                   </p>
                 </div>
               </div>
-              <div className="testimonial-box">
+
+              <div
+                className="testimonial-box"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <div className="box-top">
                   <div className="profile">
                     <div className="profile-img">

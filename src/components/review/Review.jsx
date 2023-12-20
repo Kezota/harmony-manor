@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./review.css";
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import img1 from "../../images/person1.jpg";
 import img2 from "../../images/person2.jpg";
@@ -9,14 +11,24 @@ import img3 from "../../images/person3.jpg";
 import img4 from "../../images/person4.jpg";
 
 const Review = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="review container section">
       <div className="sec-container">
         <div className="sec-intro">
-          <h2 className="sec-title">What Other People Say?</h2>
+          <h2 className="sec-title" data-aos="fade-up">
+            What Other People Say?
+          </h2>
         </div>
         <div className="main-content testimonial-box-container">
-          <div className="testimonial-box">
+          <div
+            className="testimonial-box"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div className="box-top">
               <div className="profile">
                 <div className="profile-img">
@@ -44,7 +56,11 @@ const Review = () => {
               </p>
             </div>
           </div>
-          <div className="testimonial-box">
+          <div
+            className="testimonial-box"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div className="box-top">
               <div className="profile">
                 <div className="profile-img">
@@ -72,7 +88,11 @@ const Review = () => {
               </p>
             </div>
           </div>
-          <div className="testimonial-box">
+          <div
+            className="testimonial-box"
+            data-aos="fade-up"
+            data-aos-duration="2500"
+          >
             <div className="box-top">
               <div className="profile">
                 <div className="profile-img">
@@ -100,7 +120,11 @@ const Review = () => {
               </p>
             </div>
           </div>
-          <div className="testimonial-box">
+          <div
+            className="testimonial-box"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
             <div className="box-top">
               <div className="profile">
                 <div className="profile-img">

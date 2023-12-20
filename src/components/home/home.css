@@ -43,7 +43,7 @@
   width: 80%;
   border-radius: 1rem;
   padding: 2rem;
-  background: rgb(248, 248, 248);
+  background: white;
   position: absolute;
   gap: 1rem;
   justify-content: center;
@@ -145,7 +145,7 @@
 }
 @media screen and (min-width: 720px) {
   .home .sec-container .home-card {
-    background: rgb(248, 248, 248);
+    background: white;
     bottom: -15%;
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem 2rem;

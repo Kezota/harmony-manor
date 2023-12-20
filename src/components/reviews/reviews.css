@@ -84,7 +84,7 @@
   background-color: white !important;
 }
 .reviews .reviews-section .heading {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../../images/about2.avif") center center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../../images/reviews.avif") center center/cover no-repeat;
   height: 20rem;
   z-index: -1;
 }

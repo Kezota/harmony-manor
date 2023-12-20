@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./facilities.css";
 import { BsArrowLeftShort, BsArrowRightShort, BsDot } from "react-icons/bs";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import img1 from "../../images/facility1.png";
 import img2 from "../../images/facility2.png";
@@ -8,18 +10,24 @@ import img3 from "../../images/facility3.png";
 import img4 from "../../images/facility4.jpg";
 
 const Facilites = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <section className="facilities section container">
       <div className="sec-container">
         <div className="sec-header flex">
           <div className="text-div">
-            <h1 className="sec-title">Hotel's Facilites</h1>
+            <h1 className="sec-title" data-aos="fade-up">
+              Hotel's Facilites
+            </h1>
           </div>
         </div>
 
         <div className="main-content">
           <div className="facilities-div grid">
-            <div className="facility">
+            <div className="facility" data-aos="fade-up">
               <div className="img-div">
                 <img src={img1} alt="Image Name" />
               </div>
@@ -31,7 +39,12 @@ const Facilites = () => {
                 </p>
               </div>
             </div>
-            <div className="facility">
+
+            <div
+              className="facility"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div className="img-div hangout-place">
                 <img src={img3} alt="Image Name" />
               </div>
@@ -43,7 +56,12 @@ const Facilites = () => {
                 </p>
               </div>
             </div>
-            <div className="facility">
+
+            <div
+              className="facility"
+              data-aos="fade-up"
+              data-aos-duration="2500"
+            >
               <div className="img-div">
                 <img src={img2} alt="Image Name" />
               </div>
@@ -55,7 +73,12 @@ const Facilites = () => {
                 </p>
               </div>
             </div>
-            <div className="facility">
+
+            <div
+              className="facility"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
               <div className="img-div swimming-pool">
                 <img src={img4} alt="Image Name" />
               </div>

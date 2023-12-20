@@ -64,7 +64,7 @@ $SmokeyGray: rgba(115, 115, 115, 1);
       width: 80%;
       border-radius: 1rem;
       padding: 2rem;
-      background: $WhiteLilac;
+      background: white;
       position: absolute;
       gap: 1rem;
       justify-content: center;
@@ -189,7 +189,7 @@ $SmokeyGray: rgba(115, 115, 115, 1);
   .home {
     .sec-container {
       .home-card {
-        background: $WhiteLilac;
+        background: white;
         bottom: -15%;
         grid-template-columns: repeat(2, 1fr);
         padding: 1rem 2rem;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./offers.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
@@ -6,6 +6,8 @@ import { MdKingBed } from "react-icons/md";
 import { BsArrowRightShort } from "react-icons/bs";
 import { IoMdPeople } from "react-icons/io";
 import { PiForkKnifeFill } from "react-icons/pi";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import Footer from "../footer/Footer";
 import Offer from "../offer/Offer";
@@ -106,6 +108,15 @@ const Offers = () => {
     setActive("navbar");
   };
 
+  // scroll to top on page load
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <div className="offers">
       <section className="navbar-section">
@@ -187,8 +198,10 @@ const Offers = () => {
       <section className="offers-section">
         <div className="heading">
           <div className="sec-title">
-            <h1 className="title">Offers Page</h1>
-            <p>
+            <h1 className="title" data-aos="fade-down" data-aos-duration="2000">
+              Offers Page
+            </h1>
+            <p data-aos="fade-down">
               Explore a range of meticulously curated hotel room types, each
               designed to elevate your stay with a perfect blend of comfort
             </p>
@@ -201,7 +214,12 @@ const Offers = () => {
               {OffersData.map(
                 ({ id, imgSrc, roomType, roomsLeft, price, facilities }) => {
                   return (
-                    <div className="single-offer" style={{ marginTop: 40 }}>
+                    <div
+                      className="single-offer"
+                      style={{ marginTop: 40 }}
+                      data-aos="fade-up"
+                      data-aos-duration="2000"
+                    >
                       <div className="dest-image">
                         <img src={imgSrc} alt="Image Name" />
 
@@ -240,6 +258,8 @@ const Offers = () => {
             <div className="see-more">
               <button
                 className="btn flex"
+                data-aos="fade-up"
+                data-aos-duration="2500"
                 onClick={() => {
                   navigate("/reservation");
                 }}

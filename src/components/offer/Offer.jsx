@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./offer.css";
 import { MdKingBed } from "react-icons/md";
 import { BsArrowRightShort } from "react-icons/bs";
 import { IoMdPeople } from "react-icons/io";
 import { PiForkKnifeFill } from "react-icons/pi";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import img1 from "../../images/room1.jpeg";
 import img2 from "../../images/room2.jpeg";
@@ -52,12 +54,18 @@ const OffersData = [
 const Offer = () => {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <section className="offer container section">
       <div className="sec-container">
         <div className="sec-intro">
-          <h2 className="sec-title">Hotel Room Types</h2>
-          <p>
+          <h2 className="sec-title" data-aos="fade-up">
+            Hotel Room Types
+          </h2>
+          <p data-aos="fade-up" data-aos-duration="2000">
             Explore a range of meticulously curated hotel room types, each
             designed to elevate your stay with a perfect blend of comfort,
             style, and personalized hospitality
@@ -68,7 +76,11 @@ const Offer = () => {
           {OffersData.map(
             ({ id, imgSrc, roomType, roomsLeft, price, facilities }) => {
               return (
-                <div className="single-offer">
+                <div
+                  className="single-offer"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
                   <div className="dest-image">
                     <img src={imgSrc} alt="Image Name" />
 
@@ -105,6 +117,8 @@ const Offer = () => {
         <div className="see-more">
           <button
             className="btn flex"
+            data-aos="fade-up"
+            data-aos-duration="3500"
             onClick={() => {
               navigate("/offers");
             }}

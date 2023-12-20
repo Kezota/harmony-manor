@@ -28,7 +28,13 @@ const Footer = () => {
                   "https://www.facebook.com/profile.php?id=61554514212774";
               }}
             />
-            <BsTwitter className="icon" />
+            <BsTwitter
+              className="icon"
+              onClick={() => {
+                window.location.href =
+                  "https://x.com/Harmonymanor_?t=a-Dkk7cGmWIeMpueQ-l8lA&s=08";
+              }}
+            />
             <AiFillInstagram
               className="icon"
               onClick={() => {

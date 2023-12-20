@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./about.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
 import Footer from "../footer/Footer";
@@ -17,6 +20,15 @@ const About = () => {
   const removeNav = () => {
     setActive("navbar");
   };
+
+  // scroll to top on page load
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
   return (
     <div className="about">
@@ -102,14 +114,20 @@ const About = () => {
       <section className="about-section" style={{ marginBottom: 80 }}>
         <div className="heading">
           <div className="sec-title">
-            <h1 className="title">About Page</h1>
-            <p>
+            <h1 className="title" data-aos="fade-down" data-aos-duration="2000">
+              About Page
+            </h1>
+            <p data-aos="fade-down">
               Unveiling the essence of our hotel, where luxury meets
               personalized comfort in every detail
             </p>
           </div>
         </div>
-        <div className="section container">
+        <div
+          className="section container"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <p className="first-p">
             Welcome to our distinguished hotel, a sanctuary of elegance and
             comfort in the heart of Bali, Indonesia. From the moment you enter

@@ -1,6 +1,3 @@
-.navbar-section .nav-link {
-  font-weight: 600;
-}
 .navbar-section .header {
   position: fixed;
   display: flex;
@@ -33,11 +30,13 @@
   }
   .navbar-section .header .navbar .nav-lists .nav-item {
     padding: 1rem 0;
+    cursor: pointer;
   }
   .navbar-section .header .navbar .nav-lists .nav-item .nav-link {
     color: rgb(54, 54, 54);
     font-size: 0.9rem;
     font-weight: 600;
+    cursor: pointer !important;
   }
   .navbar-section .header .navbar .nav-lists .nav-item .nav-link:hover {
     color: rgb(33, 53, 85);
@@ -49,7 +48,7 @@
   .navbar-section .header .navbar .nav-lists .header-btns .btn {
     margin-top: 1rem;
   }
-  .navbar-section .header .navbar .nav-lists .header-btns .btn a:hover {
+  .navbar-section .header .navbar .nav-lists .header-btns .btn:hover {
     color: var(rgb(248, 248, 248));
   }
   .navbar-section .header .navbar .close-navbar {
@@ -90,22 +89,22 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    cursor: pointer;
   }
-  .navbar-section .header .navbar .nav-lists .nav-item .nav-link {
+  .navbar-section .header .navbar .nav-lists .nav-link {
     color: rgb(115, 115, 115);
     padding: 0 1rem;
+    cursor: pointer !important;
     font-size: 0.9rem;
     font-weight: 600;
   }
-  .navbar-section .header .navbar .nav-lists .nav-item .nav-link:hover {
+  .navbar-section .header .navbar .nav-lists .nav-link:hover {
     color: rgb(79, 112, 156);
   }
   .navbar-section .header .navbar .nav-lists .btn {
     margin-left: 1rem;
     padding: 10px 30px;
     font-size: 13px;
-  }
-  .navbar-section .header .navbar .nav-lists .btn a {
     color: rgb(248, 248, 248);
     font-weight: 500;
   }
