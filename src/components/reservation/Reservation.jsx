@@ -242,6 +242,7 @@ const Reservation = () => {
                         </span>
                         <h2>Reservation is Made!</h2>
                         <p>Your reservation has been successfully made.</p>
+                        <p>We will contact you.</p>
                       </div>
                     </div>
                   )}

@@ -84,7 +84,7 @@ const Offer = () => {
                   <div className="dest-image">
                     <img src={imgSrc} alt="Image Name" />
 
-                    <span className="rooms-left">{roomsLeft} rooms left</span>
+                    <span className="rooms-left">30% Off</span>
                   </div>
 
                   <div className="offer-body">
