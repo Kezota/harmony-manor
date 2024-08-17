@@ -1,5 +1,5 @@
 import React from "react";
-import "./app.css";
+import "./App.css";
 import Index from "./components/index/Index";
 import Reservation from "./components/reservation/Reservation";
 import About from "./components/about/About";
