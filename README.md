@@ -1,4 +1,4 @@
-# Harmony Manor 🌿
+# Harmony Manor 🛎️
 
 Welcome to **Harmony Manor**, a beautifully designed landing page for a villa or hotel, offering a serene escape in a luxurious setting. Explore the features of our exquisite property, discover our amenities, and find the perfect retreat to relax and unwind. This application is built using [React.js](https://reactjs.org/) with the create-react-app boilerplate and is hosted on [Vercel](https://vercel.com/).
 
@@ -33,7 +33,7 @@ If you want to run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Kezota/guess-my-number.git
+   git clone https://github.com/Kezota/harmony-manor.git
    ```
 2. Navigate to the project directory:
    ```bash
