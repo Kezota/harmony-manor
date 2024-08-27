@@ -6,8 +6,7 @@ Welcome to **Harmony Manor**, a beautifully designed landing page for a villa or
 
 ## 🚀 Live Demo
 
-Experience the live version of the landing page:  
-[https://harmony-manor.vercel.app](https://harmony-manor.vercel.app).
+Experience the live version of the landing page: [https://harmony-manor.vercel.app](https://harmony-manor.vercel.app).
 
 ## 🛠️ Features
 
@@ -49,6 +48,10 @@ If you want to run this project locally, follow these steps:
    npm start
    ```
 5. Open `http://localhost:3000` in your browser to view the game.
+
+## 👏 Credits
+
+This landing page was crafted with care by Kezota.
 
 ## 🤝 Contributing
 
