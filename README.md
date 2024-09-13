@@ -37,7 +37,7 @@ If you want to run this project locally, follow these steps:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd guess-my-number
+   cd harmony-manor
    ```
 3. Install the dependencies:
    ```bash
